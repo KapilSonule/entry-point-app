@@ -5,6 +5,7 @@ import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import About from './Component/About';
 import Contact from './Component/Contact';
+import NotFound from './Page/NotFound';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route exact path ="/" component={Home} />
       <Route exact path ="/about" component={About} />
       <Route exact path ="/contact" component={Contact} />
+      <Route component={NotFound}/>
       </Switch>
       
      </div>
